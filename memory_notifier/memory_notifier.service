@@ -1,0 +1,10 @@
+﻿[Unit]
+	Description=Service to run memory_notifier.py
+	Requires=network-online.target
+	After=network-online.target
+[Service]
+	Type=exec
+	Restart=on-failure
+	ExecStart=/bin/sh -c "python3 /usr/local/bin/memory_notifier.py http://localhost:8080/memory/use --threshold 10 --interval 1"
+[Install]
+	WantedBy=multi-user.target
