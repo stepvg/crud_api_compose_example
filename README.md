@@ -9,7 +9,7 @@
 * Download current repository
 > `git clone https://github.com/stepvg/crud_api_compose_example.git`
 > `cd crud_api_compose_example/`
-* Run install.sh (systemd service requires sudo)
+* Run [install.sh](install.sh) (systemd service requires sudo)
 > `./install.sh`
 * You can use Curl to monitor the operation of the memory_notifier.py script.
 > `curl -v -X GET http://localhost:8080/memory/use`
